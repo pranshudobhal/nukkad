@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #111111;
+  --secondary-color: #3b82f6;
+  --pink-peach: #d6806e;
+  --message-color: #d6b793;
+  --card-background-color: #e9afa3;
+  --message-background-color: #353434;
+  --yellow: #f9f871;
+  --background-color: #212121;
+  --navbar-background-color: #191919;
+  --navbar-background-color-alt: #1e1c1c;
+  --white: #fff;
+  --gray: #6b7280;
+  --border-color: #d7d7d7;
+  --card-border: rgb(229, 229, 229);
+  --green-dark: #047857;
+  --green-light: #00c896;
+  --scrollbar-thumb: #9b9b9b;
+  --scrollbar-thumb-hover: #7c7a7a;
+}
+
+body {
+  margin: 0;
+  color: var(--white);
+  background-color: var(--background-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,53 @@
+.chatRoomMessageContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 65vw;
+  height: max-content;
+  margin: 1rem 0;
+}
+
+.chatRoomMessageContainer .image {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.chatRoomMessageContainer .image img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.chatRoomMessageContainer .message {
+  width: 75%;
+  border-radius: 8px;
+  background-color: var(--message-background-color);
+  padding: 0.65rem;
+}
+
+.message .messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.message .messageHeader span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.message .messageHeader span:last-child {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.message .messageBody {
+  font-size: 1.05rem;
+  padding: 0.5rem 0.5rem;
+  color: var(--message-color);
+  word-wrap: break-word;
+}

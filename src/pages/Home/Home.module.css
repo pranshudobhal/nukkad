@@ -1,0 +1,44 @@
+.homeContainer {
+  width: 95vw;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+}
+
+.greetings {
+  margin-bottom: 1rem;
+}
+
+.greetings h3 {
+  font-size: 1.25rem;
+  color: var(--pink-peach);
+}
+
+.popularRooms {
+  padding: 1rem 0;
+  margin-bottom: 1.25rem;
+}
+
+.popularRooms .heading {
+  margin-bottom: 1rem;
+}
+
+.popularRooms .heading h4 {
+  font-size: 1.1rem;
+}
+
+.allRooms {
+  padding: 1rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.allRooms .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.allRooms .heading span {
+  font-size: 0.9rem;
+  color: var(--green-light);
+}

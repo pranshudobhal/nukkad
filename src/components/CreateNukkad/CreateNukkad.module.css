@@ -1,0 +1,79 @@
+.createNukkadContainer {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.createNukkadContainer button {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-dark);
+  color: var(--white);
+  border: 0;
+  border-radius: 999em;
+  cursor: pointer;
+}
+
+.createNukkadContainer button span {
+  font-size: 1.1rem;
+}
+
+.modalCloseContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.topicModalContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  width: 60vw;
+  padding: 1.05rem;
+}
+
+.topicModalContainer h4 {
+  margin-bottom: 0.75rem;
+}
+
+.topicModalContainer textarea {
+  margin-bottom: 0.5rem;
+  resize: none;
+  height: 100px;
+  width: 100%;
+  font-size: 1.05rem;
+}
+
+.topicModalContainer p {
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.actions span {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  padding: 0.5rem 0;
+}
+
+.actions span:last-child {
+  background-color: var(--green-dark);
+  color: var(--white);
+}

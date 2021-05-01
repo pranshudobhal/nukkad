@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--background-color);
+}
+
+.chatRoomInputContainer {
+  padding-bottom: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.chatRoomInputContainer form {
+  display: flex;
+  align-items: center;
+}
+
+.chatRoomInputContainer form input {
+  width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  border: 1px solid var(--gray);
+  color: var(--white);
+}
+
+.chatRoomInputContainer form button {
+  width: 20%;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--green-dark);
+  cursor: pointer;
+}
