@@ -48,3 +48,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+.loaderContainer h1 {
+  margin-bottom: 2rem;
+}

@@ -1,20 +1,23 @@
 import styles from './CreateNukkad.module.css';
 import AddIcon from '@material-ui/icons/Add';
 import { useState } from 'react';
-import { db } from '../../firebase';
+import { auth, db } from '../../firebase';
 import firebase from 'firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 export function CreateNukkad() {
   const [topicModal, showTopicModal] = useState(false);
   const [topic, setTopic] = useState('');
   const toggleModal = () => showTopicModal((topicModal) => !topicModal);
   const [topicCharCount, setTopicCharCount] = useState(0);
+  const [user] = useAuthState(auth);
 
   const createRoom = () => {
     if (topic !== '') {
       db.collection('rooms').add({
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-        // createdBy: uid,
+        createdBy: user.uid,
+        admin: user.displayName,
         name: topic,
         type: 'public',
         saveChat: true,

@@ -33,7 +33,7 @@ export function Home() {
           </div>
           <div className={styles.rooms}>
             {rooms?.docs.map((doc) => {
-              return <Card key={doc.id} id={doc.id} topic={doc.data().name} />;
+              return <Card key={doc.id} id={doc.id} topic={doc.data().name} owner={doc.data().admin} />;
             })}
           </div>
         </div>

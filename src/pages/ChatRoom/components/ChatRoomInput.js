@@ -16,6 +16,7 @@ export function ChatRoomInput({ roomID }) {
       db.collection('messages').doc(roomID).collection('messages').add({
         messageText: input,
         sentAt: firebase.firestore.FieldValue.serverTimestamp(),
+        sentBy: user.uid,
         userName: user.displayName,
         userImage: user.photoURL,
       });
