@@ -5,24 +5,33 @@
 }
 
 :root {
-  --primary-color: #111111;
-  --secondary-color: #3b82f6;
-  --pink-peach: #d6806e;
-  --message-color: #d6b793;
-  --card-background-color: #e9afa3;
+  --message-color: #fff;
+  --message-sender: #cfff91;
   --message-background-color: #353434;
-  --yellow: #f9f871;
-  --background-color: #212121;
-  --navbar-background-color: #191919;
-  --navbar-background-color-alt: #1e1c1c;
+  --background-color: #191b1c;
   --white: #fff;
-  --gray: #6b7280;
-  --border-color: #d7d7d7;
-  --card-border: rgb(229, 229, 229);
-  --green-dark: #047857;
-  --green-light: #00c896;
+  --gray: #949496;
+  --green-light: #7abb27;
+  --green-dark: #1a2d01;
   --scrollbar-thumb: #9b9b9b;
   --scrollbar-thumb-hover: #7c7a7a;
+}
+
+::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 body {

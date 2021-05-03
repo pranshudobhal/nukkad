@@ -1,5 +1,4 @@
 import styles from './Navbar.module.css';
-import SearchIcon from '@material-ui/icons/Search';
 import { useNavigate } from 'react-router';
 import { auth } from '../../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -12,12 +11,12 @@ export function Navbar() {
     <div className={styles.navbarContainer}>
       <div className={styles.navbar}>
         <div className={styles.logo} onClick={() => navigate('/')}>
-          <h2>Nukkad</h2>
+          <img src="nukkad-logo.png" alt="Nukkad" />
+        </div>
+        <div className={styles.logoText}>
+          <img src="nukkad-text-logo.png" alt="Nukkad" />
         </div>
         <div className={styles.actions}>
-          <span>
-            <SearchIcon style={{ fontSize: 27 }} />
-          </span>
           <span onClick={() => navigate('/profile')}>
             <img src={user?.photoURL} alt={user?.displayName} />
           </span>

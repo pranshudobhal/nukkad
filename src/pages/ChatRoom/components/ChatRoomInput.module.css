@@ -11,6 +11,12 @@
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .chatRoomInputContainer {
+    width: 50vw;
+  }
+}
+
 .chatRoomInputContainer form {
   display: flex;
   align-items: center;
@@ -29,7 +35,7 @@
   width: 20%;
   padding: 0.25rem 1rem;
   border-radius: 5px;
-  background-color: var(--background-color);
-  color: var(--green-dark);
+  background-color: var(--green-light);
+  color: var(--white);
   cursor: pointer;
 }

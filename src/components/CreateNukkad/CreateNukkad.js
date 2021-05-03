@@ -1,5 +1,4 @@
 import styles from './CreateNukkad.module.css';
-import AddIcon from '@material-ui/icons/Add';
 import { useState } from 'react';
 import { auth, db } from '../../firebase';
 import firebase from 'firebase';
@@ -14,14 +13,17 @@ export function CreateNukkad() {
 
   const createRoom = () => {
     if (topic !== '') {
-      db.collection('rooms').add({
-        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-        createdBy: user.uid,
-        admin: user.displayName,
-        name: topic,
-        type: 'public',
-        saveChat: true,
-      });
+      db.collection('rooms')
+        .add({
+          createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+          createdBy: user.uid,
+          admin: user.displayName,
+          name: topic,
+          type: 'public',
+          saveChat: true,
+          roomOpen: true,
+        })
+        .catch((error) => console.log('Error creating a room! ', error));
     }
   };
 
@@ -29,7 +31,6 @@ export function CreateNukkad() {
     <>
       <div className={styles.createNukkadContainer}>
         <button onClick={toggleModal}>
-          <AddIcon />
           <span>Create a Nukkad</span>
         </button>
       </div>

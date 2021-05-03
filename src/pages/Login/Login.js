@@ -7,9 +7,11 @@ export function Login() {
   return (
     <div className={styles.loginContainer}>
       <div className={styles.container}>
-        <h1>Nukkad</h1>
-        <h3>Connecting people from every corner</h3>
-        {/* <button>Sign in with Google</button> */}
+        <div className={styles.logo}>
+          <img className={styles.image} src="nukkad-logo.png" alt="Nukkad" />
+          <img className={styles.logoText} src="nukkad-text-logo.png" alt="" />
+        </div>
+        <div className={styles.subHeading}>Brewing conversations like never before</div>
         <div className={styles.googleBtn} onClick={signInWithGoogle}>
           <div className={styles.googleIconWrapper}>
             <img className={styles.googleIcon} src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Sign in with Google" />

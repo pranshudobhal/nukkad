@@ -13,7 +13,7 @@ function App() {
     return (
       <div className="loaderContainer">
         <h1>Nukkad</h1>
-        <SyncLoader color={`#047857`} loading={loading} size={15} margin={10} />
+        <SyncLoader color={`#7abb27`} loading={loading} size={15} margin={10} />
       </div>
     );
   }

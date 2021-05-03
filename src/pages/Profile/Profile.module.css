@@ -1,5 +1,19 @@
-.profileContainer {
+.container {
   width: 95vw;
+  margin: 1rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50vw;
+  }
+}
+
+.myRooms {
+  padding: 1rem;
+}
+
+.profileContainer {
   margin: 1rem auto;
 }
 
@@ -16,6 +30,7 @@
   height: 10rem;
   width: 10rem;
   object-fit: cover;
+  border: 5px solid var(--green-light);
 }
 
 .profile h1 {
@@ -24,8 +39,9 @@
 
 .profile button {
   padding: 0.75rem 2rem;
+  font-size: 1.15rem;
   border-radius: 999em;
-  background-color: var(--green-dark);
+  background-color: var(--green-light);
   color: var(--white);
   outline: none;
   border: none;

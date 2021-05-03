@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--green-dark);
+  background-color: var(--green-light);
   color: var(--white);
   border: 0;
   border-radius: 999em;
@@ -19,6 +19,7 @@
 
 .createNukkadContainer button span {
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .modalCloseContainer {
@@ -36,10 +37,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--white);
-  color: var(--primary-color);
+  background-color: var(--green-light);
+  color: var(--white);
   width: 60vw;
   padding: 1.05rem;
+  border-radius: 8px;
 }
 
 .topicModalContainer h4 {
@@ -48,16 +50,20 @@
 }
 
 .topicModalContainer textarea {
-  margin-bottom: 0.5rem;
+  font-family: inherit;
+  margin: 0.15rem 0;
   resize: none;
   height: 100px;
   width: 100%;
   font-size: 1.05rem;
   padding: 0.5rem;
+  border: 1px solid white;
 }
 
 .topicModalContainer p {
   text-align: center;
+  font-size: 0.85rem;
+  color: var(--white);
 }
 
 .actions {
@@ -76,6 +82,14 @@
 }
 
 .actions span:last-child {
-  background-color: var(--green-dark);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--green-light);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .topicModalContainer {
+    width: 30vw;
+  }
 }
