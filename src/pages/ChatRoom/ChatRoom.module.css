@@ -1,0 +1,336 @@
+.chatRoomContainer {
+  width: 95vw;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+}
+
+.chatRoomDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 200px;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  padding-top: 1rem;
+  max-height: max-content;
+}
+
+.chatRoomDescription .topic {
+  width: 75%;
+  word-wrap: break-word;
+  padding-right: 0.5rem;
+  height: 100%;
+}
+
+.chatRoomDescription .topic h2 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.chatRoomDescription .topic p {
+  padding-bottom: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.chatRoomDescription .actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 25%;
+}
+
+.actions span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 50%;
+  background-color: var(--green-light);
+  cursor: pointer;
+}
+
+.chatRoomMessages {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+.loaderContainer h1 {
+  margin-bottom: 2rem;
+}
+
+/* Close room modal */
+
+.modalCloseContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.closeRoomModalContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green-light);
+  color: var(--white);
+  width: 60vw;
+  padding: 1.05rem;
+  border-radius: 15px;
+}
+
+.closeRoomModalContainer h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.closeRoomModalContainer .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.closeRoomModalContainer .actions span {
+  display: inline-block;
+  text-align: center;
+  flex-grow: 1;
+  padding: 0.25rem 0;
+  border-radius: 0;
+}
+
+.closeRoomModalContainer .actions span:last-child {
+  background-color: var(--white);
+  color: var(--green-light);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Save chat modal */
+
+.saveChatModalContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green-light);
+  color: var(--white);
+  width: 60vw;
+  padding: 1.05rem;
+  border-radius: 15px;
+}
+
+.saveChatModalContainer h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.saveChatModalContainer h4 + span {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem;
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--green-light);
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.saveChatModalContainer .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.saveChatModalContainer .actions span {
+  display: inline-block;
+  text-align: center;
+  flex-grow: 1;
+  padding: 0.25rem 0;
+  border-radius: 0;
+}
+
+.saveChatModalContainer .actions span:last-child {
+  background-color: var(--white);
+  color: var(--green-light);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* More modal */
+
+.moreModalContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green-light);
+  color: var(--white);
+  border-radius: 15px;
+  width: 60vw;
+  padding: 1.05rem;
+}
+
+.moreModalContainer ul {
+  margin: 0 1rem;
+}
+
+.moreModalContainer li {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Members modal */
+
+.membersModalContainer {
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  overflow-y: auto;
+  background-color: var(--green-light);
+  color: var(--white);
+  border-radius: 15px;
+  width: 60vw;
+  height: 80vh;
+  padding: 1.05rem;
+}
+
+.membersModalContainer .closeIcon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--white);
+}
+
+.membersModalContainer .membersList {
+  margin-top: 2rem;
+}
+
+.membersList li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.membersList li:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.membersList li img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.membersList li span {
+  display: inline-block;
+  border-radius: 0;
+  width: max-content;
+  height: 100%;
+}
+
+.membersList .memberName h4 {
+  font-weight: 500;
+}
+
+/* User side members  */
+
+.membersModalContainer .membersListUser {
+  margin-top: 2rem;
+}
+
+.membersListUser li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.membersListUser li:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.membersListUser li img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+.membersListUser li span {
+  display: inline-block;
+  border-radius: 0;
+  width: max-content;
+  height: 100%;
+}
+
+.membersListUser li span:first-child {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .chatRoomContainer {
+    width: 50vw;
+  }
+
+  .chatRoomDescription .topic h2 {
+    font-size: 1.5rem;
+  }
+
+  .membersModalContainer {
+    right: 25vw;
+    top: 5rem;
+    width: 20vw;
+    height: 60vh;
+  }
+
+  .chatRoomDescription .actions {
+    justify-content: space-evenly;
+  }
+
+  .moreModalContainer {
+    width: 20vw;
+  }
+
+  .closeRoomModalContainer {
+    width: 20vw;
+  }
+
+  .saveChatModalContainer {
+    width: 20vw;
+  }
+}

@@ -1,0 +1,52 @@
+.navbarContainer {
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.navbar {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 50vw;
+  }
+}
+
+.navbar .logo {
+  cursor: pointer;
+}
+
+.navbar .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar .logoText img {
+  width: 5rem;
+  height: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions span {
+  display: inline-block;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.actions span img {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+}

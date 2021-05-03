@@ -1,0 +1,66 @@
+.homeContainer {
+  width: 95vw;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .homeContainer {
+    width: 50vw;
+  }
+}
+
+.greetings {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--green-light);
+  line-height: 1.5rem;
+}
+
+.greetings span {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.greetings span:last-child {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.popularRooms {
+  padding: 1rem 0;
+  margin-bottom: 1.25rem;
+}
+
+.popularRooms .heading {
+  margin-bottom: 1rem;
+}
+
+.popularRooms .heading h4 {
+  font-size: 1.1rem;
+}
+
+.allRooms {
+  padding: 1rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.allRooms .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.allRooms .rooms {
+  display: flex;
+  overflow-x: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.allRooms .heading span {
+  font-size: 0.9rem;
+  color: var(--green-light);
+}

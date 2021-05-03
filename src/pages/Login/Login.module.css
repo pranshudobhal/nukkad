@@ -1,0 +1,85 @@
+.loginContainer {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  padding: 2rem 1rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .image {
+  height: 8rem;
+  width: 8rem;
+}
+
+.logo .logoText {
+  margin-top: 1rem;
+  height: 2rem;
+  width: 8rem;
+}
+
+.container h3 {
+  font-size: 1.15rem;
+  font-weight: 300;
+  padding-bottom: 4rem;
+}
+
+.googleBtn {
+  position: relative;
+  margin-top: 6rem;
+  width: 200px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.googleBtn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+
+.googleBtn:active {
+  background: #1669f2;
+}
+
+.googleIconWrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.googleIcon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.btnText {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
