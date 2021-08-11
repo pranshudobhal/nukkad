@@ -2,7 +2,6 @@
 
 An easy to use drop-in text chat! 😀
 
-<br />
 
 ## **Team**
 - Pranshu Dobhal
@@ -22,9 +21,6 @@ $ npm install
 - ReactJS
 - Firebase Firestore
 
-<br />
-
-
 ## **Author**
 - **Website** - [Pranshu Dobhal](https://pranshudobhal.netlify.app/)
 - **Twitter** - [@pranshu_dobhal](https://twitter.com/pranshu_dobhal)
@@ -33,3 +29,6 @@ $ npm install
 ## **Acknowledgments**
 
 A big thanks to my mentor **[Tanay Pratap](https://twitter.com/tanaypratap)** for inspiring me and making me break my limits and also to neoG.camp **[NeoGrammers](https://twitter.com/neogcamp)** for giving me this oppurtunity to participate in this exciting hackathon.😀
+
+## **License**
+This project is licensed under the terms of the [MIT license](LICENSE).
